@@ -248,7 +248,7 @@ const ReportGenerator = ({ userData, onSuccess, className = "" }: ReportGenerato
   };
 
   const submitFormData = (data) => {
-    axios.post("https://mindpal-api.vercel.app/api/run-workflow", { data }
+    axios.post("https://career-builder-rear-be.vercel.app/api/run-workflow", { data }
     ).then((res) => {
       if (res.data) {
         setProgress(30);
@@ -268,7 +268,7 @@ const ReportGenerator = ({ userData, onSuccess, className = "" }: ReportGenerato
   }
 
   const getResposeData = (run_id, attempt = 0) => {
-    axios.get("https://mindpal-api.vercel.app/api/workflow-result", {
+    axios.get("https://career-builder-rear-be.vercel.app/api/workflow-result", {
       params: { run_id: run_id }
     })
       .then((res) => {

@@ -1,0 +1,9 @@
+
+project_id = "wfidhsdsghntioeyhypp"
+
+[functions.generate-report]
+verify_jwt = false
+[functions.generate-report.env_vars]
+MINDPAL_WORKFLOW_ID = "67f8293957be881abb66f28b"
+MINDPAL_API_KEY = "${MINDPAL_API_KEY}"
+

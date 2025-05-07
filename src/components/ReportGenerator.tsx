@@ -268,6 +268,7 @@ const ReportGenerator = ({ userData, onSuccess, className = "" }: ReportGenerato
   }
 
   const getResposeData = (run_id, attempt = 0) => {
+    console.log(12345)
     axios.get("https://career-builder-rear-be.vercel.app/api/workflow-result", {
       params: { run_id: run_id }
     })
